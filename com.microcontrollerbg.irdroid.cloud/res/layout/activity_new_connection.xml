@@ -1,0 +1,102 @@
+<!-- Root Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:paddingTop="0sp"
+    android:paddingBottom="15sp">
+
+
+    <!-- First Row -->
+    <LinearLayout
+         android:id="@+id/clientIdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="15sp">
+        <TextView
+             android:id="@+id/clientIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clientID"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+         android:id="@+id/clientId"
+          
+            android:hint="@string/idHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:inputType="number" />
+    </LinearLayout>
+
+
+    <!-- Second Row -->
+    <LinearLayout
+         android:id="@+id/locationIdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="15sp">
+        <TextView
+              android:id="@+id/locationIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+             android:id="@+id/location"
+          
+            android:inputType="text"
+            android:hint="@string/locationHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+     <!-- Third Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15sp">
+        <TextView
+             android:id="@+id/SwitchTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switchtype"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+       <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/switchtypes"
+    />
+    </LinearLayout>
+ <!-- Third Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15sp">
+        <TextView
+             android:id="@+id/channelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/channel"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+           android:id="@+id/channel"
+         
+            android:hint="@string/channelHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:inputType="number" />
+    </LinearLayout>
+
+
+</LinearLayout>
